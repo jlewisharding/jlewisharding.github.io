@@ -1,0 +1,148 @@
+---
+title: "Last War: Survivor Tutorial by Golbez"
+
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+<div style="text-align: center;">
+![](C:/Users/jeffr/LastWar/Images/LastWar Logo.jpg) 
+</div>
+# Overview 
+
+
+## __Game Meta__ ## 
+  
+Last War: Survival can be considered a game in two phases. 
+
+Initially, the gameplay takes the form of the scrolling zombie battle game that you see advertised on social media all the time. While this type of game play remains a part of the game to some extent, it's mostly used as a way to get people sucked into playing the game while they get you hooked on the second phase (hoping you'll stick around and spend money).
+
+The second phase of game play is all about strategic base development. It's like SIM City, Age of Empires, and other classic empire building game formats. What perhaps make this game a little different (and more fun in my opinion), is the intentional design to make joining an alliance essential. While there are certainly ways to enjoy the game playing on your own (more about that here), the Devs have clearly made the majority of the focus the events and tasks that are oriented around cooperation with your alliance and combat against other alliances and servers.
+
+<br>
+<br>
+<br>
+
+
+<br>
+  
+# Alliance Duel: Weekly VS Battle Strategy
+
+Alliance duel is one of the biggest parts of this game. Some would argue it's the main point of the game. The idea is that 6 out of 7 days each will, alliance members complete in-game tasks that earn points for your alliance. Every day has a different theme. To maximize your performance, you not only have to do the correct tasks on the optimal day, but you have to be patient and plan on the other 6 days to ensure you aren't wasting "future" points. It's definitely a balance.
+
+It's important to know that Last War:Surival is a _pay to win_ game. In other words, you can employ all of the strategy you can and play this game 24/7, and you'll still not stand a chance again people who spend actual real-world money on the game (you can read more of my thoughts on spending real money here). That being said, you can grind your way to success and can often win by being smart instead of rich.
+
+The first step to playing smart is to upgrade your Aliance Duel tech in the Tech Center.
+
+## The Tech Center
+
+Every HQ has at least one Tech Center. You can purchase a second tech center for $9.99, which is not required, but it will drastically improve your ability to grow in the game.I intentionally don't pressure people to spend money on this game. However, the second Tech Center makes my list of Top 5 Real Money Spends in the game. 
+
+The first image shows you what your tech center looks like. The second image shows you the research tech domains you can access (at varying levels). 
+
+![](C:/Users/jeffr/LastWar/Images/Tech Centers.png){width=25%}
+![](C:/Users/jeffr/LastWar/Images/Tech Research Paths.png){width=25%}
+
+
+When you click on the Alliance Duel domain (VS icon), you will see many options that give bonuses to the tasks we need to perform each week to earn VS points. I am highlighting the Radar tech in the top left corner. Mine happens to be fully completed. This means that on days when radar tasks give VS points, mine give 150% percent of the base points (100% base + 50% buff). In other words, each radar task I complete increases my/our VS Duel points by 25,000. So a member with a lower research level is doing the same thing I am but is getting a fraction of the points for it. 
+
+
+![](C:/Users/jeffr/LastWar/Images/Alliance Duel Research Path.png){width=20%}
+![](C:/Users/jeffr/LastWar/Images/VS Tech Icons.png){width=20%}
+<br>
+
+![](C:/Users/jeffr/LastWar/Images/Focused Radar Upgrade.png){width=70%}
+
+Once you've completed an upgrade, you will always get the higher points in each week's Alliance Duel.You will see that there are buffs for nearly everything we do that earns Alliance Duel points. This is the first and most important step you can take to improving your contributions to the Alliance Duel.
+
+
+### Day 3: Age of Science
+
+<br>
+*Alliance Duel Victory Value: 2 Points*
+<br>
+
+
+![](C:/Users/jeffr/LastWar/Images/Age of Science Details.png){width=25%} 
+
+__Day 3 Explained__
+
+Day 3 (Age of Science) Rewards VS points for the following:
+
++ Tech Center Research
+  + Completing Research 
+  + Using Research Speedups
+  + Using Valor Badges
++ Increasing Tech Power (which comes from completing research)
++ Completing Radar Tasks
++ Opening Drone Compenent Chests
+
+__Prioritizing__
+
+_Upgrades with Valor Badges_
+
+The way to earn the most VS points on Day 3 is by upgrading tech that requires the use of valor badges, which can be viewed in your inventory's "Special" tab and look like this:
+
+![](C:/Users/jeffr/LastWar/Images/Valor Badges.png){width=25%} 
+
+There are multiple ways to acquire valor badges, but that doesn't make them easy to get. You likely won't be able to upgrade ever valor-badge tech you want each time it's the Age of Science. You simply will run out of those before you run out of speedups and gold. 
+
+The following tech domains require valor badges for upgrades:
+
++ Allience Duel
+
++ Intercity Truck
+
++ Siege to Seize
+
++ Defense Fortifications
+
+_Radar Tasks_
+
+This can be a huge and easy source of points. But this is mostly true when you have maxed out the radar boost in the Alliance Duel Tech domain in the research center. I am __extremely__ reluctant to tell people how to spend their money, but I do not advise paying the $4.99 for a radar replinsh. It can purchase 1,000,000 VS points when you are fully upgraded, but this is typically nowhere near enough to flip the outcome of the day. What's more, you have basically nothing to show for your money. The benefit is almost immediately gone. 
+
+_Drone Component Chests_
+
+The hardest part about getting points opening drone component chests is just waiting 6 days to spend them each week as Day 3 is the only time you get VS points for them. The very high level chests can boost your score very quickly, but those are extremely difficult to obtain. As I said before, the best thing you can do is keep staring at the image below six days and not touching them.
+
+![](C:/Users/jeffr/LastWar/Images/Drone Component Chests.png){width=25%}
+
+__Maximizing with the Secretary of Science Buff__
+
+Most of the time (I won't go into the exceptions here), you can apply at the capital for the Secretary of Science (and other) position. The server's First Lady appoints people to this position once they have applied. Generally, when it is your turn, you will have the Secretay of Science position for 5 minutes only. During this time, you will get a 50% reduction in research time added to your existing buffs. This means it doesn't cut the time you see in half. It's more complicated than that. Nevertheless, it can take DAYS (yes, days!) off of your time for research at the higher levels. 
+
+To apply for Secretary of Science Position, you can click the "Capital" crown icon that is sometimes visible on the right hand side of your screen. When that icon is not there, you need to go to your profile, select the server (421), and then select the "Officials" (building) icon. 
+
+
+![](C:/Users/jeffr/LastWar/Images/Capital Icon.png){width=15%}
+![](C:/Users/jeffr/LastWar/Images/Secretary of Science.png){width=20%}
+
+![](C:/Users/jeffr/LastWar/Images/Capital Officials.png){width=20%}
+
+
+Make sure that you plan ahead. The wait list is usually very long. Each person in line is a minimum 5 minute wait. Count how many are ahead of you, multiply by 5, and then set an alarm for close to the time when you should be up. Keep in mind that some First Lady's skip over folks in the quere who are not online. So it's possible that you will get skipped if you sign off. Getting this buff can be a serious committment on Day 3 of VS, but it's definitely worth it. 
+
+Once the buff is active, choose small research tasks (in terms of time). Start the task and then burn through all of the research speedups I know you've been saving. Complete as many research levels as possible, focusing on those that use Valor Badges. Watch your point total skyrocket while you get super strong. 
+
+
+Pro Tip: The Secretary of Science position also gives you a 25% boost to building construction time reduction, so you can double dip. Similarly, the Secretary of Development Position gives you a 25% research boost in addition to the 50% construction boost. So if you don't feel like waiting in line for Secretary of Science, you can usually get the Development position faster and sacrifice some times. 
+
+
+
+
+
+
+
+
+
+  
+  
+  
