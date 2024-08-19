@@ -1,8 +1,0 @@
-name: "my-website"
-navbar:
-  title: "My Website"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: r4r5comms.html
