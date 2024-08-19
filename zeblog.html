@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Ze Blog from Golbez</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">My Website</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="r4r5comms.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Ze Blog from Golbez</h1>
+
+</div>
+
+
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:35.0%" /></p>
+<div id="housekeeping" class="section level1">
+<h1>Housekeeping</h1>
+<ul>
+<li><p>Bookmark this blog</p></li>
+<li><p>Bookmark the <a
+href="https://rpubs.com/jeffreylharding/LastWar">Strategy
+Guide</a></p></li>
+<li><p>Join the Discord Group: Ask someone in the chat for a
+link</p></li>
+<li><p>Like and subscribe to the <span class="citation">@Golbez80</span>
+YouTube Channel</p></li>
+<li><p>ALL TIMES IN THE BLOG SHOULD BE CONSIDERED TO BE EASTERN (US)
+TIME ZONE</p></li>
+</ul>
+</div>
+<div id="this-is-a-test" class="section level1">
+<h1>This is a test</h1>
+</div>
+<div id="and-so-it-begins" class="section level1 tabset tabset-pills">
+<h1 class="tabset tabset-pills">And so it begins</h1>
+<p>Famiglia, there’s a lot going on. I hope this organization format
+helps. Make sure you check out info on Season 1 stuff as well as regular
+gameplay stuff like VS.</p>
+<div id="season-1" class="section level2 tabset tabset-pills">
+<h2 class="tabset tabset-pills">Season 1</h2>
+<p>We’ve learned a lot in the last day. Here’s there skinny on what we
+think you need to know to get started in Season 1. For now, we are only
+focusing on your individual gameplay and not large-scale alliance and
+server-wide gameplay.</p>
+<p>Ok. There’s a virus. You need immunity. You get it from upgrading the
+Virus Research Institute. You need Immune Protein to upgrade the Virus
+Research Institute. The main way you get that is from farms. Check out
+the Essential Resources tab for more on that.</p>
+<p>Zombies are way tougher in Season 1. They are infected. So as their
+levels get higher, you need more resistance. You get higher resistance
+by building and upgrading the new Virus Research Academy.</p>
+<p><img src="Images/Construction%20Icon.png"
+style="width:35.0%" /> <img
+src="Images/Farm%20and%20Institute.png"
+style="width:35.0%" /></p>
+<p>The Virus Research Institute and the Protein Farms are in the lowest
+right section of your HQ, an area that was previously unoccupied.</p>
+<div id="essential-resources" class="section level3">
+<h3>Essential Resources</h3>
+<p>There are two new currencies: Immmue Protein and Mutant Crystals. You
+can get them from typical free in-game mechanics like defeating
+monsters. You can also get through so seasonal tasks and
+accomplishments. And, of course, you can buy them.</p>
+<ul>
+<li>Immune Protein:</li>
+</ul>
+<p>The passive way to get Immune Protein (pickle juice) is from Protein
+Farms. These are like other resource producing buildings in your HQ. You
+can upgrade them using Mutant Crystals, the other new currency in Season
+1.</p>
+<p>You start with one farm, but you can get 4 for free and a fifth if
+you purchase the weekly pass from the in-game store. There is a strategy
+to this part of the process. Follow these instructions.</p>
+<ul>
+<li>Build your first farm and upgrade to level 5</li>
+<li>Build your second farm and upgrade to level 10, unlocking farm
+3.</li>
+<li>Build your third farm and upgrade to level 10, unlocking farm
+4.</li>
+<li>Build your fourth farm and upgrade how you like.</li>
+</ul>
+<p><strong>Upgrading your weekly pass farm does not help you unlock your
+free farms!</strong></p>
+<p>Mutant Crystals:</p>
+<p>Mutant Crystals primarily come from event accomplishments and from
+your first time defeating infected monseters (first blood kills). The
+first blood doom walker each day (first DW you kill, regardless of
+level) also gives you crystals. And, as you may have guessed, you can
+buy them from the store.</p>
+<p><img src="Images/Infected%20Zombies.jpg"
+style="width:35.0%" /></p>
+<p>Crystals are essential for upgrading your Protein Farms.</p>
+</div>
+<div id="killing-infected-zombies" class="section level3">
+<h3>Killing Infected Zombies</h3>
+<p>Zombies now have new information explaining the minimum recommended
+resistance for attacking and rallying. You get higher resistances by
+upgrading the Virus Research Institute.</p>
+<p><img src="Images/Enemy%20Resistance.png"
+style="width:35.0%" /></p>
+<p><img
+src="Images/Virus%20Research%20Institute.png"
+style="width:35.0%" /></p>
+<p>When you attack zombies without meeting the minimum resistances, a
+few things happen:</p>
+<ul>
+<li>You deal less damage, especially if you are significantly under the
+minimum.</li>
+<li>More troops die than usual</li>
+<li>Some injured troops become infected and continue to do less
+damage</li>
+</ul>
+<p>You can get around the resistance requirements to some extent with
+rallies. As long as the person who rallies meets the requirements for
+resistance (and power as usual), the rally should have a good chance. In
+this way, higher resistance squads can help carry lower resistance
+squads.</p>
+<p>Doom Elites are a lot harder this Season. There is a work-around to
+help low-power/low-res folks. Coordinate with someone with 1250+
+resistance to rally with you. You will have to launch it to get credits,
+and because of your low resistance, you will lose lots of troops the
+higher the Doom Elite level. However, if you choose a squad and remove
+all but 1 hero, you will make sure you take only a fraction of the
+normal troops into battle. That’s fine because the other person you’re
+working with should have the power to kill the Doom Elite for you.</p>
+<p>If you don’t know, you remove heroes from your squad the same way you
+add and change them around. Go to the “Garage” just outside your
+wall.</p>
+</div>
+<div id="your-infected-hq" class="section level3">
+<h3>Your Infected HQ</h3>
+<p>When you attack zombies that are too much for you, some of your squad
+comes back infected. This is reflected in a purple icon on your HQ
+(world map view). A new icon on the left of your screen also tells you
+your infection level. You can share your HQ coordinates in the chat to
+have your alliance fam help you clear the infection. You help clear the
+infection from someone’s HQ by scouting it. ` <img
+src="Images/HQ%20Cleanse.PNG"
+style="width:35.0%" /> <img
+src="Images/Infection%20Count.PNG"
+style="width:35.0%" /></p>
+<p>Alternatively, before you get all cleaned up and disinfected by our
+loving fam, you should take a squad with infected troops out into the
+wild and attack a HQ that <strong>doesn’t belong to any
+alliance</strong>. I know. That’s mean. It’s a war game, though. You can
+either feel good about yourself or you can complete tasks for rewards
+like mutant crystals and immunity protein shakes. You can’t do both.</p>
+<p><img src="Images/Infected%20Squad.png"
+style="width:35.0%" /></p>
+</div>
+</div>
+<div id="vs-and-other-stuff" class="section level2">
+<h2>VS and Other Stuff</h2>
+<p>Don’t forget about VS. Big ticket items today:</p>
+<ul>
+<li>Radar Tasks</li>
+<li>Drone Data and Parts Spend</li>
+<li>Stamina Spend</li>
+<li>Gathering resources from iron mines, gold mines, and wheat fields
+<ul>
+<li>You don’t get VS points until you leave the mines/fields</li>
+<li>Set an alarm to remind you to bring your squads home before reset at
+10 p.m.</li>
+<li>ABG: Always Be Gathering</li>
+</ul></li>
+<li>Hero XP Spend
+<ul>
+<li>Normally I say wait until Thursday to use hero XP in VS. You get
+almost 3x the VS points on Thursday as You do on Monday. However, I
+think a win today would be awesome. So spend them if you want!</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="section" class="section level1 tabset">
+<h1 class="tabset"></h1>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+<p><br> <br> <br> <br></p>
+</div>
+<div id="friday-night-lights" class="section level1">
+<h1>Friday Night Lights</h1>
+<p>Famiglia,</p>
+<p>It’s the first round of the biggest night in Last War:Survival each
+week for our new LFG alliance. I want to thank everyone for all the hard
+work, dedication and patience. I don’t know that PAL ever had close to
+90% of our members at 1 million VS points. You all did that today. And
+many of you got out in the mud and earned you 10,000 honor points. Don’t
+forget to spend them only on Legendary Gear Blueprints in the honor
+shop!</p>
+<p>Unfortunately, I won’t be around to celebrate and play with you all
+tonight. I’ve spent so much of the past week with my face buried in my
+phone gaming and coordinating or on my laptop writing this blog that my
+wife is about to murder me.</p>
+<p>So tonight I’m putting the game down for a while and taking her out
+for a much deserved night on the town.</p>
+<p>I want to take this opportunity to tell you that I’m never going to
+be mad at you for prioritizing real life needs over this game. This
+should be an escape from, not the creator of, stress in your life.
+Tonight, I’ll lead by example.</p>
+<p>I leave you in very capable hands. Your R4s have been and continue to
+work tirelessly to make sure you all can continue to enjoy the game at a
+high level. Tonight they will lead your through Desert Storm and prepare
+you for Enemy Buster. Do me a favor and take care of the following big
+ticket items:</p>
+<ul>
+<li>Server reset happens at 10:00 Eastern, giving way to Day 6 of VS:
+Enemy Buster
+<ul>
+<li>Make sure that by 10:00 all of your squads are out from gathering
+and inside your HQ</li>
+<li>Make sure you have removed all of your squads from your wall
+<br></li>
+</ul></li>
+<li>Turn on your 24 hour shield
+<ul>
+<li>Ideally, you should do this between 10:00 and 10:04 p.m.</li>
+<li>If you don’t have one, please buy one in the Alliance shop</li>
+<li>If you have to put your shield up before 10:00 (like I do), set an
+alarm for tomorrow so you’ll know to log back in and turn another one on
+(you may want to use two 12-hour shields or an 8-hour shield to finish
+up tomorrow) <br></li>
+</ul></li>
+<li>If you’re signed up for Desert Storm:
+<ul>
+<li>Join the Desert Storm Channel in our Discord and familiarize
+yourself with Lizthezard’s battle plan.</li>
+<li>Log in on time! Desert Storm starts at 9:00 sharp and goes until
+someone clearly wins or 40 minutes is up</li>
+<li>Be careful not to use your Healing Speedups in Desert Storm
+<ul>
+<li>The troops you lose inside the event aren’t lost in your actual
+HQ</li>
+<li>Healing speed ups used during the event, however, ARE USED UP in
+your actual HQ <br></li>
+</ul></li>
+</ul></li>
+<li>If you aren’t in DS, please try and stay out of the chat too much
+from 9:00 to 9:40 so the team can communicate while fighting. <br></li>
+<li>If you are online tonight from 12:00 (midnight) til 2:00, you will
+have your first window for playing Winter Storm. It’s actually more fun
+in a lot of ways than Desert Storm and it’s another way to earn Honor
+Points. There are a few 2-hour windows for playing in WS, but the first
+one is super late tonight. And the second is fairly early in the
+morning. Check out the event and read up for more info.</li>
+</ul>
+<p>Ok, that’s all. I’ve got to get ready for date night. Have fun
+tonight, fam.</p>
+<p>Warm anti-hero regards,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+</div>
+<div id="capital-warcapitol-conquest-a.k.a-fun-in-the-mud"
+class="section level1">
+<h1>Capital War/Capitol Conquest a.k.a “Fun in the Mud”</h1>
+<p>Famiglia,</p>
+<p>This is the first post today. It’s all about Capital War.</p>
+<p>Last War: Survival is clearly designed as a war game. You may have
+noticed that the center of the map is gray/brown with a big capital
+building in the middle. Each Friday from 10:00 a.m. - 6:00 p.m., the
+alliances in the server can battle for control of the capital. The
+winning alliance gets to be the President and control lots of stuff for
+the server.</p>
+<p>Because this game also has server vs server mechanics, the top
+alliances in our server (421) have an agreement whereby they peacefully
+rotate control of the capital and share the rewards and responsibilites
+that go along with it.</p>
+<p>For the rest of us, though, this is still an opportunity to earn
+Honor Points, which are arguably the most important currency in the game
+for reaching the highest power levels for your heroes.</p>
+<div id="earning-honor-points-in-capital-war" class="section level2">
+<h2>Earning Honor Points in Capital War:</h2>
+<p><img
+src="Images/Capital%20War%20Main%20Screen.png"
+style="width:35.0%" /></p>
+<ul>
+<li><p>During the Capitol Conquest, only commanders battling in
+Contaminated Lands (the “mud”) will earn captial war event
+points.</p></li>
+<li><p>In the Capitol Conquest, you score capital war event points by
+inflicting serious injuries and casualities on enemy (other 421
+alliance) Units. The higher the troop level, the more event points you
+earn.</p></li>
+<li><p>You’ll also earn event points when your own units die. Higher
+level fallen units give more points.</p></li>
+<li><p>Once you reach a certain event point threshold, you’ll receive
+corresponding Honor Rewards, including honor points.</p></li>
+</ul>
+<p><img src="Images/CW%20Event%20Points.png"
+style="width:35.0%" /> <img
+src="Images/Honor%20Store%20Blueprints.png"
+style="width:35.0%" /></p>
+</div>
+<div id="captial-war-mechanics" class="section level2">
+<h2>Captial War Mechanics</h2>
+<p><img src="Images/Annotated%20Mud.png"
+style="width:35.0%" /></p>
+<p>The actual fighting you need to do takes place ONLY IN THE
+CONTAMINATED ZONE. That’s the brown/gray mud in the center of the
+map.</p>
+<p>There are two main ways to participate.</p>
+<ul>
+<li><p>You find a resource tile in the in mud that has a red pick axe
+icon, signifying that another alliance member is in that tile. Then you
+attack that tile. If you lose, it means all your troops are injured or
+dead. That sucks, but you still are earning the chance to get honor
+points. And while losing troops sucks, you get VS points on Day 5 for
+training troops, so there’s a silver lining there, too.</p></li>
+<li><p>You can also occupy an empty tile and either wait to be attacked
+or share your tile’s coordintes to World Chat so people know you want
+them to attack you.</p></li>
+</ul>
+<p>The agreed upon norm in our server says any occupied tile in the mud
+during Capital War is fair game for attack. Don’t complain if you were
+just harmlessly gathering gold. ore, or food and you get murdered. It’s
+not safe out there. This is your fault.</p>
+<p>That being said, some people ignore this norm and think you should
+only get attacked if you advertise your tile in WC. This is stupid for
+many many reasons, but I can’t control other folks. Most alliance
+leaders share my view. But you may get angry DMs from people if you
+attack their tile without finding it in world chat.</p>
+<p>So best practice is to either find a tile in World Chat and attack
+it, or post a squad to your own tile and advertise it yourself.</p>
+<p><img
+src="Images/Capital%20War%20World%20Chat.png"
+style="width:35.0%" /></p>
+</div>
+</div>
+<div id="why-all-the-fuss" class="section level1">
+<h1>Why all the fuss?</h1>
+<p>As I’ve said before: honor points are the most important late-game
+currency as of the time of writing this blog. And they are hard to get.
+You cannot upgrade your heroes’ gear beyond level 40 without them.</p>
+<p>This is where patience comes into play. The honor point store has a
+LOT of tempting items for sale. Before I knew any better, I used to buy
+UR shards and UR decoration chests. But I wish had instead been hoarding
+all the Legenday Gear Blueprints I could from the beginning. My best
+advice is to only spend honor points on gear blueprints. You’ll be glad
+you did that later in the game.</p>
+<div id="advanced-capital-war-strategy" class="section level2">
+<h2>Advanced Capital War Strategy</h2>
+<p>If you have a very powerful squad (~17M plus), you can basically
+squat on a tile, broadcast it to World Chat and just sit there while you
+murder all the troops that attack you.</p>
+<p>Otherwise, Capital War takes a bit of time to get to 100,000 event
+points, which is when you max out the 10,000 honor points available in
+this event.</p>
+<div id="finishing-faster" class="section level3">
+<h3>Finishing Faster</h3>
+<p>The mud makes everything take fover. Your squads move at a fraction
+of the time. Resource tile speed boosts don’t matter.</p>
+<p>What’s more you can’t even [tile surf]. And even if you win and take
+over another tile, you can’t attack a second resource tile from the one
+you’re currently on. You have to go back to your HQ and start the
+journey over.</p>
+<p><strong>Workarounds:</strong></p>
+<p>Sometimes there aren’t any squads to attack at nearby tiles. Because
+travelin in the mud takes FOREVER, you should try to tile sure and
+slignshot around the mud using the reosource tiles surrounding the
+capital (but not in the contaminated ground). Get as close to the
+resource tile you want to attack and then target that one in the
+mud.</p>
+<p>If you have a powerful squad and you want others to attack you, you
+are best served occupying a resource tile in the mud near a different
+alliance. You may think that it’s best to choose a tile that is close to
+our hive so your squad gets there faster. But LFG famiglia can’t attack
+your tile for honor points. So you’ve essentially made it far less
+appealing for the people you need to attack you to do so. By occupying a
+tile next to other alliances you give them more incentive to attack you.
+Don’t do this with a weak squad, though. Once you are defeated you are
+redirected strictly through the mud back to your HQ. It takes forever
+and you don’t want to have to do that repeatedly.</p>
+</div>
+<div id="finishing-more-efficiently" class="section level3">
+<h3>Finishing More Efficiently</h3>
+<p>While it’s true that you get event points when you lose troops, the
+better way to get them is by killing other people’s troops. If you have
+a super powerful squad, you don’t have to worry too much about this.</p>
+<p>If your squads aren’t particularly powerful, though, you need to
+scout the resource tiles before you attack. If you are selective in your
+attacks and concentrate on squads of comparable/lower power, you have a
+better chance of earning your event points from troop kills rather than
+troop deaths.</p>
+</div>
+<div id="micro-healing" class="section level3">
+<h3>Micro-healing</h3>
+<p>You’re probably going to lose a lot of troops on your way to 10,000
+honor points (and the other rewards). If you heal them all in one go it
+may take you a day or more. That’s not what you want.</p>
+<p>The good news is that Friday is a popular day for playing this game.
+Our alliance (LFG and U5A) has good boosts for using the help button.
+Every time you ask for help with healing and an alliance member pushes
+the help button it takes ~10 minutes off the heal time. Depending on
+your Alliance Center level and survivors stationed there, you can get a
+lot of time taken off the healing.</p>
+<p>It’s best to try to heal in 30-75 minute batches (depending on your
+buffs) and ask for help each time. You can get 24 hours of dealing done
+in about half an hour depending on how long you stay online and how many
+people are active when you are.</p>
+<p>You can also use healing speedups in a pinch, but micro-healing is
+best as Day 6 is the day for getting VS points for using healing speed
+ups.</p>
+<p>Have fun in the mud!</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+</div>
+</div>
+</div>
+<div id="the-road-ahead" class="section level1">
+<h1>The Road Ahead</h1>
+<p>Famiglia,</p>
+<p>Congratulations and thank you for a successful merger. We’ve got PAO
+vets, LFG newcomers, and U5A transplants all under one roof. Some people
+are here for the long haul, others may find this isn’t for them. That’s
+ok. I’ll keep saying it: This is a game. Don’t do things that aren’t
+enjoyable.</p>
+<p>Today I’m going to be releasing some more content on the strategy
+guide. I know today is Day 4 of VS, which is Hero upgrade day and is
+everyone’s favorite. The VS mechanics for Day 4 are very simple, though.
+So I’m going to focus on Day 6: Enemy Buster intead. I’ll explain more
+in the <a href="https://rpubs.com/jeffreylharding/LastWar">Strategy
+Guide</a> throughout the day. But I want everyone to be thinking about
+this stuff starting now.</p>
+<div id="shielding-up" class="section level3">
+<h3>Shielding Up</h3>
+<p>This week we haven’t been laser-focused on winning VS, but we need to
+be laser-focused on <em>preparing and learning to win</em> VS.</p>
+<p>Day 6 (Enemy Buster- Friday - Saturday evening) is worth 4 points in
+the weekly VS battle. The fastest way to earn points on Day 6 is by
+killing troops for the other alliance. The fastest way to help the other
+alliance win is to lose your troops to them. There are two main ways to
+prevent this:</p>
+<ul>
+<li>Buy a 24 hour shield
+<ul>
+<li>You can get these in the alliance store.</li>
+<li>They cost a lot of alliance points.</li>
+<li>Prioritize buying these shields above everything else you buy in the
+alliance store</li>
+<li>Don’t deploy your 24-hour shield until 2-3 minutes have passed after
+reset.
+<ul>
+<li>There is a 5-minute cool down on enemey buster when you cannot
+attack or be attacked and earn/lose points.</li>
+<li>You can’t use the free teleported either.</li>
+<li>If you use your 24-hour shiled during the 5 minute cool down window,
+it wil stay up through the entire Enemy Buster event (unless you scout
+or attack a base while it’s active) <br></li>
+</ul></li>
+</ul></li>
+<li>Remove your squads from your HQ wall
+<ul>
+<li>We’ve been putting our squads on the wall of our HQs a lot recently
+for Zombie Siege. Make sure you remove them ahead of tomorrow
+night.</li>
+<li>This shouldn’t be a big deal because your shield makes this a
+non-issue.</li>
+<li>But just in case… don’t give away kills to the enemy. Take your guys
+(and gals) off the walls.</li>
+<li>If you don’t know how to do this, ask in the chat.</li>
+</ul></li>
+</ul>
+<p>Shield discipline on Friday night will be the main focus of my
+administration. Please do everything you can to protect your base, and
+by extension <em>la famiglia</em>.</p>
+</div>
+<div id="hero-advancement" class="section level3">
+<h3>Hero Advancement</h3>
+<p>If you haven’t used all of your Hero XP and recruitment tickets yet,
+try to save some for the Hero Advancement period of Arms Race (2:00 -
+6:00 EDT). Double dipping is frowned upon in the salsa bowl, but we love
+it in Alliance Duel.</p>
+</div>
+<div
+id="zombie-invasion-a.k.a.-the-most-wonderful-time-of-the-last-war-year"
+class="section level3">
+<h3>Zombie Invasion (a.k.a. “The Most Wonderful Time of the Last War
+Year”)</h3>
+<p>The Zombie Invasion event is live. It’s the best rotating event in
+the game. I’ll post some tips on it later, but there’s already a <a
+href="https://youtu.be/N2MWARvSMYo?si=vU6CWOdQr28z2lId">YouTube video I
+made on “tile surfing”</a> that you should check out.</p>
+</div>
+<div id="house-keeping" class="section level3">
+<h3>House keeping</h3>
+<p>Please (PLEASE) do these things <strong>today</strong> (might as well
+do them now):</p>
+<ul>
+<li>Join the <a href="https://discord.gg/2Ca2sDgR">Discord
+group</a></li>
+<li>Bookmark this blog</li>
+<li>Bookmark the <a
+href="https://rpubs.com/jeffreylharding/LastWar">Strategy Guide</a></li>
+<li>Like and subscribe to <a
+href="https://youtube.com/@golbez80?si=DoPYhSY6dWEqqlU3">this YouTube
+account</a></li>
+</ul>
+<p>Have fun out there,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /> <br> <br> <br> <br> <br> <br> <br></p>
+</div>
+</div>
+<div id="nothing-about-this-doesnt-suck" class="section level1">
+<h1>Nothing about this doesn’t suck</h1>
+<p>All,</p>
+<p>I love this game. I play it all the time. Over the past four days
+I’ve spent more hours than I can count trying to keep our alliance from
+falling apart. Nevertheless, some things are hard to do. I cannot make
+everyone happy. I’ve got the DMs to prove it.</p>
+<p>The merge with U5A was a coordinated effort in discussion with
+multiple folks from PAO as well as other server presidents. We were at
+risk of losing everything we’d worked for and the merger was the best
+move ahead. I believed it then. I still believe it.</p>
+<p>When we agreed to have U5A join us, there were 17 or so empty slots.
+U5A needed to bring over 30 or so people. At that time, PAO members were
+still leaving, and we have 5-10 accounts spread all across the map who
+hadn’t moved to the alliance in weeks. It appeared that there would be
+few, if any, instances of people who would need to transition to U5A,
+which was to become our growth and learning focused alliance.</p>
+<p>I won’t take credit for this, but over the past four days multiple
+folks who appeared to be inactive began showing up in ways they hadn’t
+in months. It has been amazing.</p>
+<p>It also makes the merger more difficult.</p>
+<p>But it doesn’t make it wrong.</p>
+<p>We want to build an alliance that is a family but is also
+competetive. What separates us from other alliances, I believe, is that
+we are more interested in earning wins through supporting and helping
+one another rather than spending. You’re not going to be kicked out
+because you can’t or don’t want to spend money.</p>
+<p>I’m sure much of this reads as hypocritical, especially if you end up
+getting asked to move to U5A. But let me be clear, there is no path of
+“excommunication” here. If we ask you to go to U5A, you will still be a
+part of this family. You just wont be in the in-game LFG alliance.</p>
+<p>You will <em>still</em>, however, have full access to our discord
+chats, this blog, more resources that are coming in the future, the
+support of this community, the friendship and camaraderie we have, and
+you will also have as much intervention as we can possibly provide if
+you get invaded by a strong alliance.</p>
+<p>You will also likely have opportunities to serve in a leadership
+capacity in U5A. It would be amazing if that alliance became as strong
+as this one. This game is actually really well designed to leverage the
+power of alliances.</p>
+<p>Please know that this absolutely sucks all the way around. I chose
+not to leave for multiple other alliances when asked this past weekend
+because I just didn’t want to leave so many of you behind.</p>
+<p>My DMs are open. Please contact me if you want to complain or
+volunteer. There’s no reason for anyone to leave yet. But if we have to
+ask people to move to U5A, I will start with those who do volunteer.</p>
+<p>While I would love for everyone who leaves to move to U5A, I
+understand that you may be pissed at me and not want anything to do with
+us. I don’t blame you. You have our blessing, whether you care or not,
+to try and join any other alliance that suits you.</p>
+<p>With apologies and stress,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+</div>
+<div id="an-open-letter-to-the-family" class="section level1">
+<h1>An Open Letter to the Family</h1>
+<p>Mia Famiglia,</p>
+<p>I address you this way on purpose. <em>La Famiglia</em> means
+<em>family</em>. I spend probably 3-4 hours a day playing this game with
+you all. I’ve come to know a lot about you and have been blown away at
+how cool this group of humans is. If I’m going to spend this much time
+with you all, I want to know that we are in a respectful and fun
+environment.</p>
+<p>At the same time, this is a game about war. There are zombies to be
+killed, doom walkers to be toppled, trucks to be plundered, and cities
+to be sacked Conquest is literally the prime game mechanic. We need to
+be committed to the cause and to each other. We need that ride or die
+mentality. When Makosa rallies a level 140 Doomie, I want you to think,
+“Lets freaking go!” When it’s Friday night and Desert storm kicks off, I
+want you to think, “Lets FREAKING go!” And when server reset flips and
+it’s time for Enemy Buster and that level 30 Disco Kitty lands in our
+base, I want you to be chill because you are in the safety of your
+shield. But in your heart, through your bones, deep down to your soul I
+want you to feel like shouting “LET’S FREAKING GOOOOOOOOO!”</p>
+<p>It’s in this spirit that I’m announcing that we are retiring PAO
+Mavericks. This is a new alliance now. We are a family ready to get
+after it. We may not outspend anyone, but we will grind these upgrades
+and get each other’s backs every day. Why? Because we are family.</p>
+<p>We are lfG: La FamiGlia</p>
+<p>Warm anti-hero regards,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+<p>LFG</p>
+<div id="pao-update-for-august-6-2024" class="section level2">
+<h2>PAO Update for August 6, 2024</h2>
+<p>Famiglia,</p>
+<p>Today is a big day. Please focus on these big ticket items first.</p>
+<div id="big-ticket-items" class="section level3">
+<h3>Big Ticket Items</h3>
+<div id="new-alliance-location" class="section level4">
+<h4>NEW ALLIANCE LOCATION</h4>
+<ul>
+<li>I’m going to be placing a new Alliance Marker on the West side of
+the capital (Look left of the mud in the center of the map. We will be
+around 10:00 on the “clock face”).
+<ul>
+<li>You will have until reset tomorrow (Wendesday, August 7, 10 pm
+Eastern) to move there</li>
+<li>If you are not with us at the capital, you risk being booted from
+the alliance to make room for the new U5A members merging with us.
+<ul>
+<li>I want everyone to use an Advanced Teleporter instead of an Alliance
+teleporter</li>
+<li>The Advanced Teleporter allows you to choose your location rather
+than being automatically placed near the flag.</li>
+<li>Please be very deliberate and careful with your HQ placement. The
+goal is to arrange our alliance into strict columns and rows.</li>
+<li>DO NOT BE THAT PERSON WHO THROWS OFF THE WHOLE ARRANGEMENT</li>
+<li>You can purchase Advanced Telporters in the VIP store for 600
+diamomds or in the Alliance Store for 7,500 Alliance points. <br> <img
+src="Images/Advanced%20TP%20Alliance%20Points.png"
+style="width:15.0%" /> <img
+src="Images/Advanced%20TP%20Diamonds.png"
+style="width:15.0%" /></li>
+<li>If you cannot afford either of those and need more time, please
+reach out to me and we will try to work something out. You will not be
+allowed to remain in the alliance, however, if you are unwilling to move
+with us to the capital.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="golbezs-big-marshall-blunder" class="section level4">
+<h4>Golbez’s Big Marshall Blunder</h4>
+<p>I’m an idiot. I accidentally set the next Marshall event for 8 a.m.
+Eastern tomorrow (Wednesday) morning. I can’t change it. If you want to
+participate, you’ll need to teleport to the new alliance marker and be
+online in the morning.</p>
+<p><strong>I DO NOT EXPECT ANYONE TO BLOW OFF WORK OR GROWN-UP
+RESPONSIBILITIES FOR THIS EVENT. IT WAS A MISTAKE. I APOLOGIZE FOR THE
+INCONVENIENCE.</strong></p>
+</div>
+</div>
+<div id="todays-goals" class="section level3">
+<h3>Today’s Goals</h3>
+<p>Day 2 is a good day for VS. You get rewarded for upgrading buildings.
+Sadly this takes a while. On the plus side, you also get rewarded for UR
+(gold/legendary) Trucks and Secret Tasks. Follow these pro-tips to help
+boost your score today:</p>
+<ul>
+<li>Pay attention to Arms Race. Don’t unwrap your completed buildings
+and save your construction speedups for 6:00 - 9:59 p.m. Eastern
+time.</li>
+<li>Use trade contracts to refresh your trucks and get UR ones.</li>
+<li>Use secret orders and diamonds to refresh your Secret Tasks to UR
+status</li>
+<li>BE PATIENT
+<ul>
+<li>You don’t have to dispatch trucks and secret tasks as soon as you
+can. You have a 24 hour window in which to dispatch them all.</li>
+<li>Throughout the day you will open chests and get rewards from
+multiple parts of the game that may have Trade Contracts, Secret Orders,
+and diamonds.</li>
+<li>Instead of dispatching purple, green, blue and grays, wait a few
+hours and see if you get more options to refresh.
+<ul>
+<li>Trade contracts for refreshing UR Trucks look like this <br> <img
+src="Images/Trade%20Contract.png"
+style="width:15.0%" /></li>
+<li>Secret Orders for refreshing Secret Tasks look like this <br> <img
+src="Images/Secret%20Orders.JPG"
+style="width:15.0%" /></li>
+</ul></li>
+<li>Please keep an eye on the Ally Tasks tab. When your secret tasks are
+ready to collect, other alliances can plunder you and rob rewards. If an
+ally assists you, however, your rewards are protected, and you can even
+help folks get bonuses when they collect. It’s a win win.</li>
+<li>This is where you help your alliance famiglia. Check this often.
+Especially on VS boost days. <br> <img
+src="Images/Ally%20Task%20Assist%20Tab.png"
+style="width:35.0%" /> <br></li>
+<li>This is what I should see because my alliance assited me (this is an
+old screenshot) <br> <img
+src="Images/Perfect%20Assists.png"
+style="width:35.0%" /></li>
+<li>This is what it looks like when your people don’t assist your tasks
+and others plunder your goods and cost you bonus chances for extra map
+pieces. <br> <img
+src="Images/Plundered%20Tasks.png"
+style="width:35.0%" /> <br></li>
+</ul></li>
+</ul>
+<p>Golbez is very sad about this.</p>
+<p>Ok, that’s enough for now. More of these to come. Bookmark this page.
+I’ll be doing most of my communicating this way.</p>
+<p>Warm anti-hero regards,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+<p>LFG</p>
+</div>
+</div>
+<div id="pao-update-for-august-5-2024" class="section level2">
+<h2>PAO Update for August 5, 2024</h2>
+<p>PAO Famiglia,</p>
+<p>I have huge news that should take us all in an exciting new
+direction. We have heard your cries for new blood in the alliance and we
+want you to know that you are not alone.</p>
+<p>I have been working with Lizthezard and Ntiva very closely to work
+out the terms and details of an alliance merger. We have taken this very
+seriously because so many of us spend much of our days in and out of the
+game, chatting and hanging out and–hopefully-kicking some booty.
+Considering how tumultuous the last few days and weeks have been, we
+have been reluctant to do anything else that was so invasive. However,
+with the launch of Season 1 only a week away, we decided that now is the
+time to act.</p>
+<div id="tldr-we-are-merging-with-u5a" class="section level3">
+<h3>TL;DR We Are Merging with U5A</h3>
+<p>After much consideration and communication, we have decided to merge
+with the U5A alliance. There are many reasons why we think this was the
+right choice. Here are a few:</p>
+<ul>
+<li>U5A is the sister alliance of PAL.<br />
+</li>
+<li>We will continue to have protection and support of an extremely
+powerful alliance</li>
+<li>We will stay connected to many of our friends who have migrated to
+PAL.</li>
+<li>You will likely have opportunities as you grow to apply to PAL if
+you wish to pursue a more aggressively competitive gampeplay
+experience.</li>
+<li>U5A will bring a core of ~30 members, including three R4s who are
+experienced and active players.</li>
+<li>The U5A culture is a perfect fit to mesh with ours. They are focused
+on growing, learning, and teaching instead of pressuring to win VS
+battles each week at all costs.</li>
+</ul>
+<p><strong>Merger Mechanics</strong></p>
+<p><em>Leadership</em>: The leader of U5A has agreed that I will remain
+the R5 and leader of the new merged alliance. They will bring several R4
+players with them and help us cooradinate and teach.</p>
+<p><em>Location</em> We are planning to move back to the capital. We are
+still working on a spot, but we will notify you tomorrow. You’ll have
+until Wednesday evening server reset to teleport to the new assembly.
+Alliance teleporters are available in the shops and are very cheap (no
+money required). Those HQs that do not make it to the capital by
+Wednesday evening will be considered inactive and not interested in the
+merger. They will be added to our list of members that need to
+transition elsewhere once we merge (more on this below).</p>
+<p>If you need help getting to the capital or can’t afford (or are out
+of purchases for) an alliance teleport, reach out to me (Golbez)
+directly. We will try to work it out so that you can wait until Friday
+and teleport when it is free.</p>
+<p>We are choosing to do this before Friday evening vs for a few
+reasons. Most of all, though, we see this as a show of your commitment
+and buy in for the future of the alliance.</p>
+<p><em>PAO Membership</em> Our alliance can have 100 members. We are
+currently between 80-85. With 30-35 U5A members expected, there will be
+some reshuffling to be expected.</p>
+<ul>
+<li>For the most part, if you are active in PAO, you will almost
+certainly remain (if you choose to).</li>
+<li>We are going to go through our current membership and identify
+players who are inactive or rarely log in. Those will be removed from
+the alliance and notified. If this does not get enough spaces open for
+U5A, we will ask for volunteers who are interested in a new
+alliance.</li>
+</ul>
+<p><strong>WHICH BRINGS ME TO U5A MEMBERSHIP</strong></p>
+<p>U5A is not going away. Their leader, Not So Elite, is going to
+maintain a second account there and keep watch over it. This will be the
+preferred alliance for the most casual of our players. If you need to
+take a break for a while or you just only check your HQ a few times a
+week, you can join U5A to play at a leisurely pace while enjoying the
+protection of TWO sister alliances.</p>
+<p>U5A will also be a place where you can go and get some experience
+serving as an R4 and fighting in Desert Storm. This might even be a good
+place for starting a second account (if you’re brave enough). The
+downside of moving here is that there are fewer active players,
+especially since the most active ones are joining us in PAO. On the
+bright side, U5A has existing tech and alliance bonuses, so you aren’t
+starting from scratch. I really think this could be a fun place for some
+folks who just want to play and not have one more thing to worry
+about.</p>
+<p><em>PAO Culture</em></p>
+<p>The new merged alliance will evolve and develop its own distinct
+culture. However, the leadership of both U5A and PAO are on the same
+page when it comes to building a community that promotes enjoying the
+game through fun, respect, growth, teaching, and learning. We will
+strive to be competetive through those channels. But we have no plans of
+becoming an alliance that puts winning above all else. There is nothing
+wrong with that mentality. This is not only a game, but it is a game
+that’s literally got WAR in the name. But that gameplay isn’t for
+everyone.</p>
+<p>I know this is a lot, and I hope you’ve made it to the end here.
+Please keep the following in mind as we move forward this week:</p>
+<p><strong><em>Our goal is to make sure no one has to leave who doesn’t
+want to. We have workded very hard the last 48+ hours to keep this
+family together and we have no intention of ruining anyone’s game
+experience. It’s 100% the opposite. If you have any questions or
+concerns, just send a DM to Golbez or Ntiva.</em></strong></p>
+<p>Big things ahead. LFG.</p>
+<p>Warm anti-hero regards,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+</div>
+</div>
+<div id="pao-update-for-august-4-2024" class="section level2">
+<h2>PAO Update for August 4, 2024</h2>
+<p>PAO Famiglia,</p>
+<p>Thank you again for your patience and support the past 24 hours (and
+more if you aren’t new). Let me start with a reminder that this is a
+game. Everything the leadership and I are working on is meant to help
+create a culture of enjoying each other and the game. At 10 pm Eastern
+time, we will receive our next opponent in VS. This opponent will likely
+be very strong since our matching was made based on our power weeks
+ago.</p>
+<p>I would like to ask that this week we not stress out over VS. We have
+a long road ahead of us. Instead of throwing all of your resources
+(Speedups, Diamonds, dollars) into a VS battle we likely won’t win,
+apply your efforts in a way that maximizes your personal HQ growth.
+Everything you do to get stronger still helps the alliance. Even if we
+win, the rewards aren’t great for VS compared to the benefits you will
+get from Arms Race and upgrades you make sooner rather than later. This
+won’t always be our approach but it is this week.</p>
+<p>For tonight and tomorrow, focus on the following:</p>
+<ul>
+<li>Read all Alliance Announcements and vote in the poll</li>
+<li>Save radar tasks until reset</li>
+<li>Add your soldiers on the wall of your base (click the + button in
+the house) for Zombie Invasion at 8 pm</li>
+<li>Remain online until Zombie Siege is over. Keep mashing the help
+button!</li>
+<li>Pause activity from 10-10:05 Eastern. This is good practice.</li>
+<li>Check the arms race calendar and try to synchronize your activities
+with those time frames. Arms Race rewards are awesome.</li>
+</ul>
+<p>There will be a lot more info coming in the next few days. Keep
+logging in and check the announcements.</p>
+<p>Warm anti-hero regards,</p>
+<p><img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" /></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
