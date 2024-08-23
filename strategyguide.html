@@ -210,6 +210,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -430,6 +436,103 @@ research boost in addition to the 50% construction boost. So if you
 don’t feel like waiting in line for Secretary of Science, you can
 usually get the Development position faster and sacrifice some
 times.</p>
+</div>
+</div>
+</div>
+<div id="rotating-events" class="section level1">
+<h1>Rotating Events</h1>
+<p>Last War features a number of events that rotate throughout the
+month. I’ll try to get them all here eventually.</p>
+<div id="zombie-invasion"
+class="section level2 tabset tabset-pills tabset-fade">
+<h2 class="tabset tabset-pills tabset-fade">Zombie Invasion</h2>
+<p><img
+src="Images/Zombie%20Invasion%20Menu.png" /></p>
+<p>I like to refer to Zombie Invasion as “The Most Wonderful Time of the
+Year.” What’s not to love about Zombie Invasion? Little leprechaumbies
+that crap out big fat Zombie Bosses when you kill them? Sweet (and I
+mean <em>sweet</em>) rewards. In fact, that’s where I’ll start.</p>
+<div id="zombie-invasion-mechanics" class="section level3">
+<h3>Zombie Invasion Mechanics</h3>
+<p>This event is straightforward. The server map populates with
+delicious little level 10 zombies holding pots of gold (henceforward
+known as leprechaumbies). The leprechaumbies are easy to kill and they
+give great rewards.</p>
+<p>Occasionally, defeating a leprechaumbie causes them to poop at a
+zombie boss. These are like doom elites (standard, not Season 1) in that
+you must rally attack them regardless of levels. The levels increase at
+multiples of 5, so don’t go looking for a level 3 one. These bosses are
+unlike regular doom elites in that, at higher levels, they can be really
+annoying to kill, making them tough little fitches (get it?
+<strong>leprechaumbie and fitch</strong>?). And the difference in
+rewards between something like a level 45 and a level 65 is in no way
+worth the loss of troops.</p>
+<p>Another cool way that these zombie bosses differ from regualar doom
+elites is that the person who killed the leprechaumbie that pooped out
+the fitch gets a “finders fee” when someone kills that fitch. So you get
+rewards even if you don’t kill it. Of course, the catch is that they are
+on a timer, so you have to kill them in a set amount of time.</p>
+<p>And if this all isn’t enough, let me put a cherry on top of this
+Sunday. If you kill the fitch that your spawned you basically get double
+rewards.</p>
+<p>What I like to do, since the leprechaumbies are so easy to kill, is
+to go tile surf (see other tab) and farm with my lower squad so that my
+top squad is free to launch the rally on any fitches I spawn.</p>
+<p><img src="Images/LepandFitch.png" /></p>
+</div>
+<div id="zombie-invasion-store" class="section level3 active">
+<h3 class="active">Zombie Invasion Store</h3>
+<p><img src="Images/Trade%20Store.png"
+style="width:25.0%" /> <br></p>
+<p>In theory the most important part of Zombie Invasion is how to
+participate. But you’d be amazed how many people participate in Zombie
+Invasion for months and have no idea there is a ZOMBIE INVASION STORE!!!
+And it’s actually really good. Here’s what you need to know.</p>
+<p>Killing Leprechaumbies (level 10 normies) and Fitches (the spawning
+zombie bosses) gives you trade store tickets. These can be spent in the
+Zombie Invasion Trade Store <strong>as long as the event is currently
+live</strong>. But don’t worry, if you don’t manage to spend all of your
+tickets, they’ll stay in your inventory until the next time the event is
+back in rotation.</p>
+<p>I don’t have tons of advice about prioritizing purchases except to
+say that my first choice here is always the stamina. Each Leprezaumbie
+uses 10 stamina and the zombie bosses require 20. You can run out of
+stamina <strong>real fast</strong> farming these lovelies. So stock up
+here first.</p>
+<p>From there, I typically prioritize hero recruitment tickets. Beyond
+that, it really just depends on your needs at the time.</p>
+<p>I typically don’t buy valor points or drone parts here because I
+don’t think they are better buys than the other stuff in the store and I
+never have enough tickets to buy everything.</p>
+</div>
+<div id="tile-surfing-for-faster-zombie-farming" class="section level3">
+<h3>Tile Surfing for Faster Zombie Farming</h3>
+<p>The game mechanics set different marching speeds for your squads
+based on the activity they are doing. In general, it takes a LOT longer
+to get somewhere when you are attacking. It takes about hald the time to
+travel to an adjacent resource tile, though, because the march speed for
+gathering is so much faster. In other words, if there is a zombie right
+next to a gold mine on the map, and you dispatch two squads at the same,
+assuming they have equal base march speeds, the squad going to the gold
+mine will get to it’s destination almost twice as fast as the one that
+you dispatched to the zombie.</p>
+<p>So the smart play if you want to attack the zombie is to dispatch
+your squad to the gold mine, then attack the zombie from the gold mine
+once you are there or right before you get to your location.</p>
+<p>Now, let’s take it to the next level for maximum efficiency. There
+are so many gold-pot-toting zombies on the map that you can spend lots
+of time hunting them. The real pro move for this is what I call “tile
+surfing”. The idea is that you find an area with lots of the little
+zombies, target a nearby resource tile, transition to the zombie, then
+rinse and repeat.</p>
+<p><a href="https://www.youtube.com/watch?v=VBqHcZpW52g">Here’s a video
+I made to demonstrate</a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VBqHcZpW52g?si=wVKQv4EEV7YLS9TD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+<p>If you’ll forgive the self-promotion here, please like and subscribe
+while you’re there. There’s not much there right now, but I’ll be
+posting more content in the future. And you know, blah blah blah
+algorithms blah blah blah.</p>
 </div>
 </div>
 </div>
@@ -677,8 +780,8 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
-    options.smoothScroll = true;
+    options.showAndHide = false;
+    options.smoothScroll = false;
 
     // tocify
     var toc = $("#TOC").tocify(options).data("toc-tocify");
