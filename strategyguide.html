@@ -250,6 +250,57 @@ div.tocify {
 </div>
 
 
+<style>
+.enlargeable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.enlargeable:hover {
+  transform: scale(1.1);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 <div style="text-align: center;">
 <p><img src="Images/LastWar%20Logo.jpg" /></p>
 </div>
@@ -314,9 +365,9 @@ list of Top 5 Real Money Spends in the game.</p>
 second image shows you the research tech domains you can access (at
 varying levels).</p>
 <p><img src="Images/Tech%20Centers.png"
-style="width:25.0%" /> <img
+class="enlargeable" style="width:25.0%" /> <img
 src="Images/Tech%20Research%20Paths.png"
-style="width:25.0%" /></p>
+class="enlargeable" style="width:25.0%" /></p>
 <p>When you click on the Alliance Duel domain (VS icon), you will see
 many options that give bonuses to the tasks we need to perform each week
 to earn VS points. I am highlighting the Radar tech in the top left
@@ -328,23 +379,40 @@ research level is doing the same thing I am but is getting a fraction of
 the points for it.</p>
 <p><img
 src="Images/Alliance%20Duel%20Research%20Path.png"
-style="width:20.0%" /> <img
+class="enlargeable" style="width:20.0%" /> <img
 src="Images/VS%20Tech%20Icons.png"
-style="width:20.0%" /> <br></p>
+class="enlargeable" style="width:20.0%" /> <br></p>
 <p><img
 src="Images/Focused%20Radar%20Upgrade.jpg"
-style="width:30.0%" /></p>
+class="enlargeable" style="width:30.0%" /></p>
 <p>Once you’ve completed an upgrade, you will always get the higher
 points in each week’s Alliance Duel.You will see that there are buffs
 for nearly everything we do that earns Alliance Duel points. This is the
 first and most important step you can take to improving your
 contributions to the Alliance Duel.</p>
+</div>
+<div id="daily-schedule-for-alliance-duel" class="section level2">
+<h2>Daily Schedule for Alliance Duel</h2>
+<p>Each day of Alliance Duel is worth a different point value. Day 1 is
+worth 1 point, Days 2 - 5 are worth 2 points, and Day 6 (Enemy Buster)
+is worth 4 points. There are basically two main approaches to winning
+the weekly duel.</p>
+<p>The first approach minimizes the importance of Day 1 since it is only
+worth 1 point. The thinking is that if you win two of the four days that
+are worth 2 points and you win Day 6, which is worth 4 points, then the
+1 point from Day is irrelevant.</p>
+<p>Alternatively, you can treat a Day One victory as essential and then
+focus on wining three of the four days that are worth 2 points each.
+Although this method requires you two win more Days, it makes Day 6
+(Enemy Buster) irrelevant, despite it being worth 4 points. This
+strategy is preferable for alliances that have been matched up with much
+more powerful enemies.</p>
 <div id="day-3-age-of-science" class="section level3">
 <h3>Day 3: Age of Science</h3>
 <p><br> <em>Alliance Duel Victory Value: 2 Points</em> <br></p>
 <p><img
 src="Images/Age%20of%20Science%20Details.PNG"
-style="width:25.0%" /></p>
+class="enlargeable" style="width:25.0%" /></p>
 <p><strong>Day 3 Explained</strong></p>
 <p>Day 3 (Age of Science) Rewards VS points for the following:</p>
 <ul>
@@ -364,7 +432,7 @@ style="width:25.0%" /></p>
 requires the use of valor badges, which can be viewed in your
 inventory’s “Special” tab and look like this:</p>
 <p><img src="Images/Valor%20Badges.png"
-style="width:25.0%" /></p>
+class="enlargeable" style="width:25.0%" /></p>
 <p>There are multiple ways to acquire valor badges, but that doesn’t
 make them easy to get. You likely won’t be able to upgrade ever
 valor-badge tech you want each time it’s the Age of Science. You simply
@@ -395,7 +463,7 @@ said before, the best thing you can do is keep staring at the image
 below six days and not touching them.</p>
 <p><img
 src="Images/Drone%20Component%20Chests.png"
-style="width:25.0%" /></p>
+class="enlargeable" style="width:25.0%" /></p>
 <p><strong>Maximizing with the Secretary of Science Buff</strong></p>
 <p>Most of the time (I won’t go into the exceptions here), you can apply
 at the capital for the Secretary of Science (and other) position. The
@@ -412,11 +480,11 @@ your screen. When that icon is not there, you need to go to your
 profile, select the server (421), and then select the “Officials”
 (building) icon.</p>
 <p><img src="Images/Capital%20Icon.png"
-style="width:15.0%" /> <img
+class="enlargeable" style="width:15.0%" /> <img
 src="Images/Secretary%20of%20Science.png"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p><img src="Images/Capital%20Officials.png"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p>Make sure that you plan ahead. The wait list is usually very long.
 Each person in line is a minimum 5 minute wait. Count how many are ahead
 of you, multiply by 5, and then set an alarm for close to the time when
@@ -446,8 +514,8 @@ month. I’ll try to get them all here eventually.</p>
 <div id="zombie-invasion"
 class="section level2 tabset tabset-pills tabset-fade">
 <h2 class="tabset tabset-pills tabset-fade">Zombie Invasion</h2>
-<p><img
-src="Images/Zombie%20Invasion%20Menu.png" /></p>
+<p><img src="Images/Zombie%20Invasion%20Menu.png"
+class="enlargeable" /></p>
 <p>I like to refer to Zombie Invasion as “The Most Wonderful Time of the
 Year.” What’s not to love about Zombie Invasion? Little leprechaumbies
 that crap out big fat Zombie Bosses when you kill them? Sweet (and I
@@ -483,7 +551,7 @@ top squad is free to launch the rally on any fitches I spawn.</p>
 <div id="zombie-invasion-store" class="section level3 active">
 <h3 class="active">Zombie Invasion Store</h3>
 <p><img src="Images/Trade%20Store.png"
-style="width:25.0%" /> <br></p>
+class="enlargeable" style="width:25.0%" /> <br></p>
 <p>In theory the most important part of Zombie Invasion is how to
 participate. But you’d be amazed how many people participate in Zombie
 Invasion for months and have no idea there is a ZOMBIE INVASION STORE!!!
@@ -598,7 +666,7 @@ might want to avoid.</p>
 <li><strong>Construction Queue 2 for $1.99</strong></li>
 </ol>
 <p><img src="Images/2ndbuilder.png"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p>Think of this as purchasing time. You don’t have to wait nearly as
 long in real life to enjoy new parts of the game if you build multiple
 buildings at once. To put it another way, this is like paying $2 for a
@@ -613,7 +681,7 @@ future diamonds with that $2. I mean who doesn’t love a good BOGO!?</p>
 <li><strong>Second Tech Center for $9.99</strong></li>
 </ol>
 <p><img src="Images/2ndtech.png"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p>When you get into later game (like HQ27 and up), the emphasis shifts
 drastically to upgrading your tech. There are SOOOOOO many tech upgrades
 and they start getting into taking multiple weeks to finish. You really
@@ -626,7 +694,7 @@ increases.</p>
 <li><strong>Kimberly (UR Tank Hero) for $.99</strong></li>
 </ol>
 <p><img src="Images/Kim99.webp"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p>This list used to have 1a as the second construction queue and 1b as
 Kim. She’s fallen a little bit recently because the game no longer
 forces you to upgrade the tank center in order to get to higher HQ
@@ -639,7 +707,7 @@ Buys).</p>
 <li><strong>Construction Queue 3 for $9.99</strong></li>
 </ol>
 <p><img src="Images/3rd%20builder.PNG"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p>This is nowhere near the steal that the second construction queue is,
 but it’s still a tremendous value. Hero power is great, but I think the
 best purchases in the game are the ones that save you time. Even with
@@ -652,7 +720,7 @@ queues will get you bottlenecked for growth in the long run.</p>
 <li><strong>“Take All” Daily Must Buy for $4.99</strong></li>
 </ol>
 <p><img src="Images/Daily%20Must%20Buy.PNG"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p>The Daily Must Buy “Take All” deal is great. Every day you get a
 chance to get 10 hero-specific UR shards and some other assorted rewards
 for $4.99. This is how I have unlocked multiple UR heroes. You can
@@ -673,7 +741,7 @@ to frop dramatically after the first level or two. But every day I get
 my five free chests.</p>
 <p><img
 src="Images/Taylor%20Rare%20Explorer%20Chest.png"
-style="width:20.0%" /></p>
+class="enlargeable" style="width:20.0%" /></p>
 <p><br> <br></p>
 </div>
 <div id="purchases-i-advise-against" class="section level2">
@@ -719,6 +787,33 @@ legendary gear blueprints. And there were counters and mechanics that
 rewarded you for each purchase despite the presence of a random game
 mechanic. But if I see a purchase option and’s totally independent
 draws, I steer clear.</p>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  var images = document.getElementsByClassName("enlargeable");
+
+  for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+  }
+
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+});
+</script>
+<div id="myModal" class="modal">
+<span class="close">×</span> <img class="modal-content" id="img01">
+<div id="caption">
+
+</div>
+</div>
 </div>
 </div>
 
@@ -771,7 +866,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

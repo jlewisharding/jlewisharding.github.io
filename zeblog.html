@@ -11,7 +11,7 @@
 
 
 
-<title>Ze Blog from Golbez</title>
+<title>Your Document Title</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -229,36 +159,66 @@ $(document).ready(function () {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Golbez</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div id="header">
 
 
 
-<h1 class="title toc-ignore">Ze Blog from Golbez</h1>
+<h1 class="title toc-ignore">Your Document Title</h1>
 
 </div>
 
 
+<style>
+.enlargeable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.enlargeable:hover {
+  transform: scale(1.1);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 <p><img src="Images/Golbez%20Avatar.jpg"
 style="width:35.0%" /></p>
 <div id="housekeeping" class="section level1">
@@ -276,6 +236,73 @@ YouTube Channel (more content coming)</p></li>
 TIME ZONE</p></li>
 </ul>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="c0PKxZ2Seh" data-description="Support me on Buy me a coffee!" data-message="Help keep me caffeinated while I write or help me pay off these packs I'm buying so my wife doesn't kill me. " data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</div>
+<div id="alliance-vs-battles-day-0-sunday" class="section level1">
+<h1>Alliance VS Battles “Day 0” (Sunday)</h1>
+<p>They an ounce of prevention is worth a pound of cure. Well, today I’m
+going to talk about how an ounce of preparation is worth a pound of VS
+points. That’s right. Earning points of Monday is something that
+actually starts on Sunday.</p>
+<p><strong>HOW DO I DO THAT!?</strong></p>
+<p>There are two main ways to prepare in advance for higher Day 1 point
+totals.</p>
+<div id="gathering-resources" class="section level2">
+<h2>Gathering Resources</h2>
+<p>It may not be the largest point gainer, but the
+<strong>easiest</strong> way to earn points on Day 1 of versus is to
+gather resources from the resource tiles (gold mines, iron mines, and
+wheat fields). Actually, though, you get the points <em>when you leave
+the resource tiles</em>. This is a very important technical point
+because it means you can start earning Day 1 VS points before Day 1
+begins. The main idea is that you make sure that when Day 1 points open
+for earning (around 10:05 Eastern on Sunday nights) you have squads
+already in the resource tiles. Once the earning window opens and you
+leave the tile (whether manually or automatically by gathering all the
+resources in the tile), you will get credit for all of the resources
+cashed in at that time. So let’s say for example that you began
+gathering gold at 3:00 p.m. on Sunday and left the tile at 10:06 p.m. on
+Sunday, you would get credit not only for the 6 minutes of collecting
+that began at server reset, but also for the 7 hours of gathering you
+did earlier in the day. The kicker to all of this is that you have to
+keep the squads in the tile until after reset. If you leave any time
+before 10:05, you will not receive any credit.</p>
+</div>
+<div id="saving-and-researching-radar-tasks" class="section level2">
+<h2>Saving and Researching Radar Tasks</h2>
+<p>It’s easy to get so caught up in just clicking on radar tasks that
+you don’t pay attention to the extra information on the screen. But
+there’s a lot of valuable info there that can help you maximinze points
+and tasks and hopefully digs.</p>
+<p>Let’s take a look at an important screen (It’s actually two screen
+shots combined into one).</p>
+<p><img
+src="Images/Radar%20Screen%20Explained.png"
+class="enlargeable" /></p>
+<p>Depending on your Radar Level, you get a certain number of tasks
+every six hours. Tasks require two actions. The first action is
+completing. This requires 10 stamina per task and can include assisting
+an ally’s task, attacking a doom elite HQ (specially generated for the
+radar task), killing a doom walker, killing a doom elite, collecting
+from supercharged resource tiles (dramatically increased gathering
+speed), or hosting a dig site!</p>
+<p>Once you complete the task, the icon on your screen will change to a
+red dot. <em>But you do not have to COLLECT the tasks as soon as you
+complete them!</em> You can leave the task on the radar map and the red
+dot will hold its place. When you are ready to collect the task, simply
+tap the icon with the red dot. This two-step process allows you to
+complete the tasks before they expire while still holding onto them
+until the days when you receive VS rewards for completing radar
+tasks.</p>
+<p>Keep in mind that each Radar Level has a cap to the number of tasks
+you can have “on hold” (completed but not collected). Once you’ve hit
+the max holding number associated with your level, you are likely better
+served collecting your 6-hour refresh number of tasks. This is because
+once you hit the max holding number, your refresh clock stops counting
+down. So if you sit on 40/40 tasks for example, once you complete them,
+<strong>only then</strong> will the clock start counting again. So even
+though you’ve been waiting a long time, you still have to wait 6 more
+hours for new ones.</p>
+</div>
 </div>
 <div id="winter-is-coming" class="section level1">
 <h1>Winter is Coming</h1>
@@ -1225,6 +1252,33 @@ logging in and check the announcements.</p>
 <p>Warm anti-hero regards,</p>
 <p><img src="Images/Golbez%20Avatar.jpg"
 style="width:15.0%" /></p>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  var images = document.getElementsByClassName("enlargeable");
+
+  for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+  }
+
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+});
+</script>
+<div id="myModal" class="modal">
+<span class="close">×</span> <img class="modal-content" id="img01">
+<div id="caption">
+
+</div>
+</div>
 </div>
 </div>
 
