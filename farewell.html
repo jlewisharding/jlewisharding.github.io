@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>My Last Last War</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">My Last Last War</h1>
+
+</div>
+
+
+<style>
+.enlargeable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.enlargeable:hover {
+  transform: scale(1.1);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<div id="adios-and-thank-you"
+class="section level1 tabset tabset-pills">
+<h1 class="tabset tabset-pills">Adios and Thank You</h1>
+<div id="english" class="section level2 active">
+<h2 class="active">English</h2>
+<p><strong>Family before Famiglia</strong></p>
+<p>Those of you from PAO and LFG days will have seen me say that
+countless times. It means that personal life <strong>always</strong>
+comes before this game. And now I have to practice what I preach.</p>
+<p>I have had a lot going on in my life and have used this game as a
+welcomed distraction. Along the way, the time and efforts I put into the
+game began to become yet one more source of trouble for me. While I have
+enjoyed my time playing this game with you all, I now have to step away
+and take care of things in my personal life with family, work, and the
+many other responsibilities I have in life. I contemplated stepping down
+from leadership and just being a member, but I don’t think I’d be able
+to do that. At least not now.</p>
+<p>Last night I ran my last Doom Walker rally with the R4s. I then gave
+my login information to Shortstuf. She will take over my account and be
+R5 for now. BiGb is going to be in charge with her, but there can only
+be one person in that role. I have complete faith in their abilities to
+continue the growth we have experienced this past year, to secure LcN’s
+and LFG’s place in the server, and to make sure everyone continues to
+enjoy this game.</p>
+<p>I cannot thank you all enough for how much enjoyment you have
+contributed to my life this past year. I have rarely been able to
+explain to anyone how I could spend so much time (and money) on this
+mobile game. It’s really not the game. It is you that have kept me so
+engaged and made all the headaches worth it.</p>
+<p>I don’t know if I’ll ever come back to the game, but I’m not dying.
+I’ll still be on discord and I can be found occasionly (but much less
+often) on Xbox Live (username Golbez80) playing Apex Legends. Feel free
+to reach out any time on Discord. I’ll always be happy to talk strategy
+or make fun of Donsai, or whatever friends do. I just can’t stick around
+any longer and still be the IRL person I need to be.</p>
+<p>I will miss you all, even Larry.</p>
+<hr />
+</div>
+<div id="enspañol" class="section level2">
+<h2>Enspañol</h2>
+<p><strong>La familia antes que la Famiglia.</strong></p>
+<p>Aquellos de ustedes de los días de PAO y LFG me habrán oído decir eso
+innumerables veces. Significa que la vida personal
+<strong>siempre</strong> viene antes que este juego. Y ahora tengo que
+practicar lo que predico.</p>
+<p>He tenido muchas cosas en mi vida y he usado este juego como una
+distracción bienvenida. A lo largo del camino, el tiempo y los esfuerzos
+que dediqué al juego comenzaron a convertirse en una fuente más de
+problemas para mí. Aunque he disfrutado mi tiempo jugando este juego con
+todos ustedes, ahora tengo que alejarme y ocuparme de las cosas en mi
+vida personal con la familia, el trabajo y las muchas otras
+responsabilidades que tengo en la vida. Contemplé dejar el liderazgo y
+ser solo un miembro, pero no creo que pueda hacerlo. Al menos no
+ahora.</p>
+<p>Anoche dirigí mi último rally de Doom Walker con los R4. Entonces le
+di mi información de inicio de sesión a Shortstuf. Ella se hará cargo de
+mi cuenta y será R5 por ahora. BiGb estará a cargo con ella, pero solo
+puede haber una persona en ese rol. Tengo plena confianza en sus
+habilidades para continuar el crecimiento que hemos experimentado este
+último año, asegurar el lugar de LcN y LFG en el servidor, y asegurarse
+de que todos sigan disfrutando de este juego.</p>
+<p>No puedo agradecerles lo suficiente por cuánto han contribuido a mi
+disfrute este último año. Rara vez he podido explicar a alguien cómo
+podía pasar tanto tiempo (y dinero) en este juego móvil. Realmente no es
+el juego. Son ustedes los que me han mantenido tan comprometido y han
+hecho que todos los dolores de cabeza valgan la pena.</p>
+<p>No sé si alguna vez volveré al juego, pero no me estoy muriendo.
+Todavía estaré en Discord y se me puede encontrar ocasionalmente (pero
+mucho menos a menudo) en Xbox Live (nombre de usuario Golbez80) jugando
+Apex Legends. No duden en contactarme en cualquier momento en Discord.
+Siempre estaré feliz de hablar de estrategia o burlarme de Donsai, o lo
+que sea que hagan los amigos. Simplemente no puedo quedarme más tiempo y
+seguir siendo la persona IRL que necesito ser.</p>
+<p>Los extrañaré a todos, incluso a Larry.</p>
+<hr />
+</div>
+</div>
+<div id="section" class="section level1">
+<h1></h1>
+<p><br></p>
+<center>
+<img src="Images/Golbez%20Avatar.jpg"
+style="width:15.0%" />
+</center>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
