@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>news.knit</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<style>
+.enlargeable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.enlargeable:hover {
+  transform: scale(1.1);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<div id="newsnoticias" class="section level1 tabset tabset-pills">
+<h1 class="tabset tabset-pills">News/Noticias</h1>
+<div id="english" class="section level2 active">
+<h2 class="active">English</h2>
+<p>All, This weekend this alliance will undergo a massive change. It
+will be bigger than the merger between LFG and HMyC that formed us. You
+may have read some comments in the chat or seen the transfer portal and
+realized that HMB (and some others) are coming here to join us. We
+defeated them in Season 4 but they have multiple players that are quite
+a bit stronger than Donsai and me. We will be getting major players and
+heavy hitters. In fact, we are expecting to welcome 50 or so players by
+Sunday.</p>
+<p>That’s good news, but there is also difficult news. To make room for
+these new folks, we are going to trim the current membership to between
+30 and 40. This means that 30-40 people will need a new home.</p>
+<p>PUC is bringing in many very strong players from HIT. BDE’s top
+players and BWB are merging. This means that we will be the third most
+powerful alliance in the server.</p>
+<p>We (Shortstuf and R4s) worked very hard last season to encourage a
+competitive atmosphere, but it was too much to manage. There were 11 of
+us and then 10-20 others who would show up consistently for the events.
+This is not the gameplay experience we want. BiGb, Lich, and AFM left
+for those reasons. Some of us have chosen to stay and try one more
+merger.</p>
+<p>The alliance next season will look unlike any version of LcN before.
+We will expect very active engagement from members in order to maintain
+membership in the alliance. We will prioritize the following.</p>
+<ol style="list-style-type: decimal">
+<li>Following directions and respecting alliance expectations. This
+includes things like not hosting digs or running doom walker rallies
+during the worm and zombies and maintaining proper hive alignment</li>
+<li>Participation in major season events (e.g., copper/spice wars)</li>
+<li>Shielding every Friday night and not allowing the shield to fail
+(you used a 12 hours instead of a 24 hour)</li>
+<li>Opening all chests for VS every day</li>
+<li>Demonstrated commitment to growing your account</li>
+<li>Not causing drama or other problems in any of the chats or through
+DMs.</li>
+</ol>
+<p>Please note that spending money is not and never will be on this
+list.</p>
+<p>In deciding who will be staying with us, we considered everyone’s
+record with the above over the past year or so. We additionally
+considered these points as well:</p>
+<ol style="list-style-type: decimal">
+<li>Strong contributions to the culture of the alliance through
+teaching, sharing, encouraging other members in the chat and creating a
+positive environment.</li>
+<li>Commitment to Desert Storm and (to a lesser extent- Zombies and the
+Worm and Vanguard Exercises).</li>
+</ol>
+<p>We are going to be saying some difficult goodbyes in the next few
+days. Some of you have been with us a long time, either from ZKB/HMyC or
+PAO/LFG, and we will miss seeing you in the alliance chat. But many of
+us were ready for a competitive game play experience 6 months ago and
+have done everything we can create that experience here with the people
+we have and it just has not worked.</p>
+<p>There are many other alliances that will allow for a more casual
+gameplay experience. Here are some suggestions. LKR and LFG are our
+preferred choices for casual players to go. Those from BDE not going to
+BWB will be joining PCO. They may change their name but Damon is still
+who you will reach out to.</p>
+<p>We are sorry if this takes you by surprise, but if you are a highly
+engaged and committed player, it really shouldn’t. And in any case,
+you’ll probably be asked to stay for the new competitive alliance.</p>
+<p>If you have any questions, email Shortstuf, Donsai, or Golbez (or
+your other favorite R4) and we will do what we can. We have enjoyed
+playing this game and being part of your lives as well. We hope to
+continue to do so. It just might be on discord or in world chat for
+some.</p>
+<p>Sincerely, LCN R5/R4</p>
+</div>
+<div id="español" class="section level2 tabset tabset-pills">
+<h2 class="tabset tabset-pills">Español</h2>
+<p>Todos, Este fin de semana, esta alianza experimentará un cambio
+masivo. Será más grande que la fusión entre LFG y HMyC que nos formó.
+Tal vez hayan leído algunos comentarios en el chat o visto el portal de
+transferencia y se hayan dado cuenta de que HMB (y algunos otros) vienen
+aquí para unirse a nosotros. Los derrotamos en la Temporada 4, pero
+tienen varios jugadores que son bastante más fuertes que Donsai y yo.
+Vamos a recibir jugadores importantes y pesos pesados. De hecho,
+esperamos dar la bienvenida a unos 50 jugadores para el domingo.</p>
+<p>Eso son buenas noticias, pero también hay noticias difíciles. Para
+hacer espacio para estas nuevas personas, vamos a reducir la membresía
+actual a entre 30 y 40. Esto significa que entre 30 y 40 personas
+necesitarán un nuevo hogar.</p>
+<p>PUC está trayendo muchos jugadores muy fuertes de HIT. Los mejores
+jugadores de BDE y BWB se están fusionando. Esto significa que seremos
+la tercera alianza más poderosa del servidor.</p>
+<p>Nosotros (Shortstuf y los R4s) trabajamos muy duro la temporada
+pasada para fomentar un ambiente competitivo, pero fue demasiado para
+manejar. Éramos 11 y luego entre 10 y 20 más que aparecían
+consistentemente en los eventos. Esta no es la experiencia de juego que
+queremos. BiGb, Lich y AFM se fueron por esas razones. Algunos de
+nosotros hemos decidido quedarnos e intentar una fusión más.</p>
+<p>La alianza de la próxima temporada no se parecerá a ninguna versión
+anterior de LcN. Esperaremos una participación muy activa de los
+miembros para mantener la membresía en la alianza. Priorizaremos lo
+siguiente:</p>
+<ul>
+<li>Seguir instrucciones y respetar las expectativas de la alianza. Esto
+incluye cosas como no organizar excavaciones ni iniciar rallies de doom
+walker durante el gusano y los zombis, y mantener una alineación
+adecuada de la colmena.</li>
+<li>Participación en los eventos principales de la temporada (por
+ejemplo, guerras de cobre/especias).</li>
+<li>Activar escudo todos los viernes por la noche y no permitir que
+falle (usaste uno de 12 horas en lugar de uno de 24).</li>
+<li>Abrir todos los cofres para VS todos los días.</li>
+<li>Demostrar compromiso con el crecimiento de tu cuenta.</li>
+<li>No causar drama ni otros problemas en los chats ni por mensajes
+directos.</li>
+</ul>
+<p>Por favor, ten en cuenta que gastar dinero no está ni estará nunca en
+esta lista.</p>
+<p>Al decidir quién se quedará con nosotros, consideramos el historial
+de cada uno con lo anterior durante el último año aproximadamente.
+Además, consideramos estos puntos:</p>
+<ul>
+<li>Contribuciones significativas a la cultura de la alianza mediante
+enseñanza, compartir conocimientos, animar a otros miembros en el chat y
+crear un ambiente positivo.</li>
+<li>Compromiso con Desert Storm y (en menor medida) con Zombis, el
+Gusano y los Ejercicios de Vanguardia.</li>
+</ul>
+<p>Vamos a tener que decir algunas despedidas difíciles en los próximos
+días. Algunos de ustedes han estado con nosotros mucho tiempo, ya sea
+desde ZKB/HMyC o PAO/LFG, y extrañaremos verlos en el chat de la
+alianza. Pero muchos de nosotros estábamos listos para una experiencia
+de juego competitiva hace seis meses e hicimos todo lo posible por crear
+esa experiencia aquí con la gente que teníamos, y simplemente no ha
+funcionado.</p>
+<p>Hay muchas otras alianzas que permitirán una experiencia de juego más
+casual. Aquí hay algunas sugerencias. LKR y LFG son nuestras opciones
+preferidas para jugadores casuales. Aquellos de BDE que no vayan a BWB
+se unirán a PCO. Puede que cambien su nombre, pero Damon seguirá siendo
+el contacto.</p>
+<p>Lamentamos si esto te toma por sorpresa, pero si eres un jugador muy
+comprometido y activo, realmente no debería. Y en cualquier caso,
+probablemente se te pedirá que te quedes en la nueva alianza
+competitiva.</p>
+<p>Si tienes alguna pregunta, envía un mensaje a Shortstuf, Donsai o
+Golbez (o a tu R4 favorito) y haremos lo que podamos. Hemos disfrutado
+jugando este juego y siendo parte de sus vidas también. Esperamos seguir
+haciéndolo. Tal vez sea en Discord o en el chat mundial para
+algunos.</p>
+<p>Atentamente, LCN R5/R4</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
